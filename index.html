@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- =========================================================
+       DOCUMENT / CORE
+  ========================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nexarium Verify Mail — NVO987 Startup Layer</title>
+
+  <meta name="description" content="Nexarium Verify Mail — secure email verification infrastructure for the NVO987 Startup Layer.">
+  <meta name="author" content="Nicholas Van-Orton">
+  <meta name="application-name" content="Nexarium Verify Mail">
+
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f3eee4">
+
+  <!-- =========================================================
+       CANONICAL / LANGUAGE
+  ========================================================== -->
+  <link rel="canonical" href="https://startup-layer.nvo987.us/">
+
+  <link rel="alternate" hreflang="en" href="https://startup-layer.nvo987.us/">
+  <link rel="alternate" hreflang="x-default" href="https://startup-layer.nvo987.us/">
+
+  <!-- =========================================================
+       OPEN GRAPH / FACEBOOK / LINKEDIN
+  ========================================================== -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NVO987 Startup Layer">
+  <meta property="og:title" content="Nexarium Verify Mail — NVO987 Startup Layer">
+  <meta property="og:description" content="Nexarium Verify Mail — secure email verification infrastructure for the NVO987 Startup Layer.">
+  <meta property="og:url" content="https://startup-layer.nvo987.us/">
+  <meta property="og:locale" content="en_US">
+
+  <meta property="og:image" content="https://startup-layer.nvo987.us/og-image.jpg">
+  <meta property="og:image:secure_url" content="https://startup-layer.nvo987.us/og-image.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nexarium Verify Mail — NVO987 Startup Layer">
+
+  <!-- =========================================================
+       X / TWITTER CARD
+  ========================================================== -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nexarium Verify Mail — NVO987 Startup Layer">
+  <meta name="twitter:description" content="Nexarium Verify Mail — secure email verification infrastructure for the NVO987 Startup Layer.">
+  <meta name="twitter:image" content="https://startup-layer.nvo987.us/og-image.jpg">
+  <meta name="twitter:image:alt" content="Nexarium Verify Mail — NVO987 Startup Layer">
+  <meta name="twitter:site" content="@NVO987">
+  <meta name="twitter:creator" content="@NVO987">
+
+  <!-- =========================================================
+       ICONS
+  ========================================================== -->
+ <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- DID document -->
+<link rel="alternate" type="application/did+json" href="https://identity.nvo987.us/.well-known/did.json">
+
+<!-- DID domain linkage proof -->
+<link rel="alternate" type="application/did+ld+json" href="https://identity.nvo987.us/.well-known/did-configuration.json">
+
+<!-- Canonical DID -->
+<meta name="did" content="did:web:identity.nvo987.us">
+
+<!-- Identity authority -->
+<link rel="me" href="https://identity.nvo987.us">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Nexarium Verify Mail">
+
+  <!-- =========================================================
+       SECURITY / BROWSER
+  ========================================================== -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+  <!-- =========================================================
+       PERFORMANCE
+  ========================================================== -->
+  <link rel="dns-prefetch" href="https://startup-layer.nvo987.us">
+  <link rel="preconnect" href="https://startup-layer.nvo987.us" crossorigin>
+
+  <style>
+    :root {
+      --ivory: #f3eee4;
+      --ivory-deep: #e9e1d4;
+      --paper: #f8f4ec;
+      --ink: #28241f;
+      --muted: #756d63;
+      --line: #bcb2a3;
+      --orange: #f05a19;
+      --orange-soft: rgba(240,90,25,.13);
+      --serif: Didot, "Bodoni 72", "Bodoni MT", "Times New Roman", serif;
+      --mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+      --sans: Arial, Helvetica, sans-serif;
+      --max: 1240px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background-color: var(--ivory);
+      background-image:
+        linear-gradient(rgba(40,36,31,.043) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(40,36,31,.043) 1px, transparent 1px);
+      background-size: 36px 36px;
+      font-family: var(--sans);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      pointer-events: none;
+      opacity: .10;
+      background-image: radial-gradient(rgba(40,36,31,.25) .45px, transparent .45px);
+      background-size: 7px 7px;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    code {
+      font-family: var(--mono);
+      font-size: .86em;
+    }
+
+    .page {
+      width: min(calc(100% - 56px), var(--max));
+      margin-inline: auto;
+    }
+
+    .mono {
+      font-family: var(--mono);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    /* HEADER */
+
+    header {
+      position: relative;
+      z-index: 50;
+      background: rgba(243,238,228,.97);
+      border-bottom: 1px solid var(--ink);
+    }
+
+    .header-inner {
+      min-height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 35px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 18px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .brand-name {
+      font-family: var(--serif);
+      font-size: 32px;
+      line-height: 1;
+      letter-spacing: -.055em;
+    }
+
+    .brand-sub {
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    nav {
+      display: grid;
+      grid-template-columns: repeat(4, auto);
+      gap: 32px;
+    }
+
+    nav a {
+      position: relative;
+      padding: 11px 0;
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: .13em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 100%;
+      bottom: 3px;
+      height: 1px;
+      background: var(--orange);
+      transition: right .35s ease;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+      color: var(--orange);
+      outline: none;
+    }
+
+    nav a:hover::after,
+    nav a:focus-visible::after {
+      right: 0;
+    }
+
+    /* HERO */
+
+    .hero {
+      position: relative;
+      min-height: 720px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      border-bottom: 1px solid var(--ink);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      padding: 105px 0 110px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(390px, .78fr);
+      gap: 65px;
+      align-items: center;
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 3;
+    }
+
+    .hero-kicker {
+      margin-bottom: 25px;
+      color: var(--orange);
+      font-family: var(--mono);
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 760px;
+      font-family: var(--serif);
+      font-size: clamp(64px, 8.8vw, 128px);
+      font-weight: 400;
+      line-height: .78;
+      letter-spacing: -.068em;
+    }
+
+    .hero-rule {
+      width: 120px;
+      height: 2px;
+      margin: 38px 0 0;
+      background: var(--orange);
+    }
+
+    /* PREMIUM GEOMETRY */
+
+    .geometry {
+      position: relative;
+      width: min(100%, 590px);
+      aspect-ratio: 1;
+      margin-inline: auto;
+      opacity: .94;
+    }
+
+    .geometry::before {
+      content: "";
+      position: absolute;
+      inset: 8%;
+      border: 1px solid rgba(40,36,31,.13);
+      border-radius: 50%;
+      animation: breathe 7s ease-in-out infinite;
+    }
+
+    .geometry svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+
+    .geo-faint {
+      fill: none;
+      stroke: var(--line);
+      stroke-width: 1;
+      opacity: .58;
+    }
+
+    .geo-line {
+      fill: none;
+      stroke: var(--ink);
+      stroke-width: 1;
+      opacity: .72;
+    }
+
+    .geo-orange {
+      fill: none;
+      stroke: var(--orange);
+      stroke-width: 1.2;
+    }
+
+    .geo-dash {
+      fill: none;
+      stroke: var(--orange);
+      stroke-width: 1;
+      stroke-dasharray: 4 9;
+      opacity: .65;
+    }
+
+    .geo-point {
+      fill: var(--orange);
+    }
+
+    .geometry-orbit-a {
+      transform-origin: 300px 300px;
+      animation: rotateClockwise 24s linear infinite;
+    }
+
+    .geometry-orbit-b {
+      transform-origin: 300px 300px;
+      animation: rotateCounter 32s linear infinite;
+    }
+
+    .geometry-orbit-c {
+      transform-origin: 300px 300px;
+      animation: rotateClockwise 42s linear infinite;
+    }
+
+    .geometry-draw {
+      stroke-dasharray: 1200;
+      stroke-dashoffset: 1200;
+      animation: draw 3.2s cubic-bezier(.22,.61,.36,1) .25s forwards;
+    }
+
+    .geometry-draw-two {
+      stroke-dasharray: 950;
+      stroke-dashoffset: 950;
+      animation: draw 3s cubic-bezier(.22,.61,.36,1) .9s forwards;
+    }
+
+    .geometry-center {
+      animation: centerPulse 4s ease-in-out infinite;
+      transform-origin: 300px 300px;
+    }
+
+    @keyframes rotateClockwise {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes rotateCounter {
+      to {
+        transform: rotate(-360deg);
+      }
+    }
+
+    @keyframes draw {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+
+    @keyframes centerPulse {
+      0%, 100% {
+        transform: scale(.9);
+        opacity: .55;
+      }
+      50% {
+        transform: scale(1.15);
+        opacity: 1;
+      }
+    }
+
+    @keyframes breathe {
+      0%, 100% {
+        transform: scale(.98);
+        opacity: .55;
+      }
+      50% {
+        transform: scale(1.02);
+        opacity: 1;
+      }
+    }
+
+    /* SECTIONS */
+
+    section {
+      border-bottom: 1px solid var(--ink);
+    }
+
+    .section-inner {
+      padding: 96px 0 105px;
+      display: grid;
+      grid-template-columns: 190px minmax(0, 1fr);
+      gap: 50px;
+    }
+
+    .section-index {
+      color: var(--orange);
+      font-family: var(--mono);
+      font-size: 13px;
+      line-height: 1.65;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .content {
+      max-width: 880px;
+    }
+
+    h2 {
+      margin: 0 0 44px;
+      font-family: var(--serif);
+      font-size: clamp(48px, 5.6vw, 78px);
+      font-weight: 400;
+      line-height: .9;
+      letter-spacing: -.052em;
+    }
+
+    .content p {
+      margin: 0 0 30px;
+      font-size: 19px;
+      line-height: 1.8;
+    }
+
+    .content p:last-child {
+      margin-bottom: 0;
+    }
+
+    .content .lead {
+      font-family: var(--serif);
+      font-size: clamp(26px, 3vw, 36px);
+      line-height: 1.25;
+      letter-spacing: -.02em;
+    }
+
+    .content ul {
+      margin: 0 0 34px;
+      padding-left: 28px;
+      font-size: 19px;
+      line-height: 1.8;
+    }
+
+    .content li {
+      padding-left: 8px;
+      margin: 7px 0;
+    }
+
+    /* MODEL */
+
+    .model {
+      position: relative;
+      margin-top: 58px;
+      padding: 27px 0;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+    }
+
+    .model-title {
+      margin-bottom: 25px;
+      color: var(--orange);
+      font-family: var(--mono);
+      font-size: 13px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .model-flow {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr;
+      align-items: center;
+      gap: 17px;
+    }
+
+    .model-flow span {
+      font-family: var(--serif);
+      font-size: clamp(19px, 2vw, 28px);
+      line-height: 1.05;
+      text-align: center;
+    }
+
+    .model-flow .arrow {
+      color: var(--orange);
+      font-family: var(--mono);
+      font-size: 21px;
+    }
+
+    /* ARCHITECTURAL BOUNDARY */
+
+    .boundary {
+      margin-top: 52px;
+      padding: 24px 26px;
+      border-left: 3px solid var(--orange);
+      background: rgba(240,90,25,.055);
+    }
+
+    .boundary p {
+      margin: 0;
+    }
+
+    /* IDENTITY */
+
+    .identity-box {
+      margin-top: 50px;
+      padding: 28px;
+      border: 1px solid var(--ink);
+      background: rgba(248,244,236,.45);
+    }
+
+    .identity-label {
+      margin-bottom: 11px;
+      color: var(--orange);
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .identity-link {
+      font-family: var(--mono);
+      font-size: 16px;
+      word-break: break-all;
+      text-decoration: none;
+      border-bottom: 1px solid var(--orange);
+    }
+
+    .identity-link:hover,
+    .identity-link:focus-visible {
+      color: var(--orange);
+      outline: none;
+    }
+
+    /* TECHNOLOGY */
+
+    .technology {
+      margin-top: 50px;
+      padding: 28px 0;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+      font-family: var(--mono);
+      font-size: 14px;
+      line-height: 2;
+    }
+
+    /* CONTACT */
+
+    .contact-block {
+      padding: 31px 0;
+      border-top: 1px solid var(--ink);
+      border-bottom: 1px solid var(--ink);
+    }
+
+    .contact-label {
+      margin-bottom: 13px;
+      color: var(--orange);
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .contact-link {
+      display: inline-block;
+      font-family: var(--serif);
+      font-size: clamp(35px, 5vw, 65px);
+      line-height: 1;
+      letter-spacing: -.045em;
+      text-decoration: none;
+      border-bottom: 1px solid var(--orange);
+    }
+
+    .contact-link:hover,
+    .contact-link:focus-visible {
+      color: var(--orange);
+      outline: none;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 0;
+      background: var(--ink);
+      color: var(--ivory);
+    }
+
+    .footer-main {
+      padding: 72px 0 76px;
+      text-align: center;
+    }
+
+    .footer-brand {
+      margin-bottom: 13px;
+      font-family: var(--serif);
+      font-size: 52px;
+      line-height: 1;
+      letter-spacing: -.06em;
+    }
+
+    .footer-author {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      opacity: .72;
+    }
+
+    /*
+      FOOTER CENTER BANNER
+    */
+
+    .footer-banner {
+      position: relative;
+      width: min(100%, 1120px);
+      margin: 0 auto 58px;
+      padding: 25px 34px;
+      border: 1px solid rgba(243,238,228,.34);
+      background:
+        linear-gradient(
+          90deg,
+          rgba(240,90,25,.12),
+          transparent 22%,
+          transparent 78%,
+          rgba(240,90,25,.12)
+        );
+      overflow: hidden;
+    }
+
+    .footer-banner::before,
+    .footer-banner::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      bottom: 12px;
+      width: 1px;
+      background: var(--orange);
+    }
+
+    .footer-banner::before {
+      left: 13px;
+    }
+
+    .footer-banner::after {
+      right: 13px;
+    }
+
+    .footer-banner-line {
+      position: absolute;
+      left: 34px;
+      right: 34px;
+      top: 50%;
+      height: 1px;
+      background: rgba(243,238,228,.15);
+    }
+
+    .footer-banner-row {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .footer-banner-title,
+    .footer-banner-status {
+      background: var(--ink);
+      padding: 0 12px;
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+
+    .footer-banner-title {
+      color: var(--ivory);
+    }
+
+    .footer-banner-status {
+      color: var(--orange);
+      white-space: nowrap;
+    }
+
+    .footer-status-dot {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      margin-right: 9px;
+      border-radius: 50%;
+      background: var(--orange);
+      vertical-align: 1px;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    .footer-links {
+      width: min(100%, 1120px);
+      margin: 0 auto;
+      padding: 0 0 52px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid rgba(243,238,228,.2);
+    }
+
+    .footer-link {
+      padding: 22px 24px 0;
+      text-align: center;
+      font-family: var(--mono);
+      font-size: 11px;
+      line-height: 1.8;
+      letter-spacing: .08em;
+      word-break: break-word;
+    }
+
+    .footer-link + .footer-link {
+      border-left: 1px solid rgba(243,238,228,.2);
+    }
+
+    .footer-link a {
+      text-decoration: none;
+      opacity: .8;
+      transition: color .25s ease, opacity .25s ease;
+    }
+
+    .footer-link a:hover,
+    .footer-link a:focus-visible {
+      color: var(--orange);
+      opacity: 1;
+      outline: none;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 1050px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .geometry {
+        width: min(100%, 520px);
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .page {
+        width: min(calc(100% - 30px), var(--max));
+      }
+
+      .header-inner {
+        padding: 18px 0;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+      }
+
+      nav {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        border-top: 1px solid var(--line);
+        border-left: 1px solid var(--line);
+      }
+
+      nav a {
+        padding: 12px;
+        border-right: 1px solid var(--line);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-inner {
+        padding: 70px 0 78px;
+        gap: 55px;
+      }
+
+      .hero-kicker {
+        font-size: 12px;
+      }
+
+      h1 {
+        font-size: clamp(58px, 17vw, 94px);
+      }
+
+      .geometry {
+        width: 100%;
+      }
+
+      .section-inner {
+        display: block;
+        padding: 70px 0 78px;
+      }
+
+      .section-index {
+        margin-bottom: 21px;
+        font-size: 12px;
+      }
+
+      h2 {
+        margin-bottom: 33px;
+        font-size: clamp(44px, 13vw, 68px);
+      }
+
+      .content p,
+      .content ul {
+        font-size: 17px;
+      }
+
+      .content .lead {
+        font-size: 25px;
+      }
+
+      .model-flow {
+        grid-template-columns: 1fr;
+        gap: 13px;
+      }
+
+      .model-flow .arrow {
+        transform: rotate(90deg);
+      }
+
+      .footer-main {
+        padding: 60px 0 65px;
+      }
+
+      .footer-brand {
+        font-size: 46px;
+      }
+
+      .footer-banner {
+        margin-bottom: 45px;
+        padding: 23px 23px;
+      }
+
+      .footer-banner-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .footer-banner-line {
+        top: 50%;
+      }
+
+      .footer-banner-title,
+      .footer-banner-status {
+        font-size: 10px;
+        text-align: center;
+      }
+
+      .footer-links {
+        grid-template-columns: 1fr;
+        padding-bottom: 35px;
+      }
+
+      .footer-link {
+        padding: 17px 10px;
+      }
+
+      .footer-link + .footer-link {
+        border-left: 0;
+        border-top: 1px solid rgba(243,238,228,.2);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .brand-name {
+        font-size: 29px;
+      }
+
+      .brand-sub {
+        font-size: 9px;
+      }
+
+      .hero-inner {
+        padding-top: 58px;
+      }
+
+      h1 {
+        font-size: clamp(54px, 16.5vw, 82px);
+      }
+
+      .geometry {
+        margin-top: 5px;
+      }
+
+      .footer-banner-title,
+      .footer-banner-status {
+        font-size: 9px;
+        letter-spacing: .08em;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .geometry-orbit-a,
+      .geometry-orbit-b,
+      .geometry-orbit-c,
+      .geometry-draw,
+      .geometry-draw-two,
+      .geometry-center,
+      .geometry::before,
+      .footer-status-dot {
+        animation: none;
+      }
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        opacity: .45;
+        transform: scale(.8);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.15);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="page header-inner">
+      <a class="brand" href="#layer" aria-label="NVO987 Startup Layer">
+        <span class="brand-name">NVO987</span>
+        <span class="brand-sub">Startup Layer</span>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <a href="https://nvo987.us">Individual Layer</a>
+        <a href="https://nexarium.us">NEXARIUM</a>
+        <a href="https://www.nvo987.us/legal-information.html"> Legal Information</a>
+        <a href="https://www.nvo987.us/about.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="layer">
+      <div class="page hero-inner">
+
+        <div class="hero-copy">
+          <div class="hero-kicker">NEXARIUM VERIFY MAIL</div>
+
+          <h1>Nexarium<br>Verify Mail</h1>
+
+          <div class="hero-rule"></div>
+        </div>
+
+        <!-- Decorative geometric construction. No text. -->
+        <div class="geometry" aria-hidden="true">
+          <svg viewBox="0 0 600 600" role="presentation">
+
+            <g class="geo-faint">
+              <circle cx="300" cy="300" r="270"></circle>
+              <circle cx="300" cy="300" r="245"></circle>
+              <circle cx="300" cy="300" r="215"></circle>
+              <circle cx="300" cy="300" r="175"></circle>
+              <circle cx="300" cy="300" r="125"></circle>
+              <circle cx="300" cy="300" r="75"></circle>
+
+              <path d="M30 300H570"></path>
+              <path d="M300 30V570"></path>
+
+              <path d="M109 109L491 491"></path>
+              <path d="M491 109L109 491"></path>
+            </g>
+
+            <g class="geometry-orbit-a">
+              <path
+                class="geo-orange geometry-draw"
+                d="M300 48L552 300L300 552L48 300Z"
+              ></path>
+
+              <circle
+                class="geo-dash"
+                cx="300"
+                cy="300"
+                r="225"
+              ></circle>
+            </g>
+
+            <g class="geometry-orbit-b">
+              <path
+                class="geo-line geometry-draw-two"
+                d="M300 98L502 300L300 502L98 300Z"
+              ></path>
+
+              <circle
+                class="geo-line"
+                cx="300"
+                cy="300"
+                r="155"
+              ></circle>
+            </g>
+
+            <g class="geometry-orbit-c">
+              <circle
+                class="geo-faint"
+                cx="300"
+                cy="300"
+                r="185"
+              ></circle>
+
+              <path
+                class="geo-orange"
+                d="M300 125L475 300L300 475L125 300Z"
+              ></path>
+            </g>
+
+            <g class="geo-line">
+              <path d="M300 30V78"></path>
+              <path d="M522 300H570"></path>
+              <path d="M300 522V570"></path>
+              <path d="M30 300H78"></path>
+            </g>
+
+            <g>
+              <circle class="geo-point" cx="300" cy="48" r="4"></circle>
+              <circle class="geo-point" cx="552" cy="300" r="4"></circle>
+              <circle class="geo-point" cx="300" cy="552" r="4"></circle>
+              <circle class="geo-point" cx="48" cy="300" r="4"></circle>
+
+              <circle class="geo-point" cx="300" cy="125" r="3"></circle>
+              <circle class="geo-point" cx="475" cy="300" r="3"></circle>
+              <circle class="geo-point" cx="300" cy="475" r="3"></circle>
+              <circle class="geo-point" cx="125" cy="300" r="3"></circle>
+            </g>
+
+            <g class="geometry-center">
+              <circle
+                class="geo-orange"
+                cx="300"
+                cy="300"
+                r="19"
+              ></circle>
+
+              <circle
+                class="geo-line"
+                cx="300"
+                cy="300"
+                r="7"
+              ></circle>
+
+              <path class="geo-line" d="M274 300H326"></path>
+              <path class="geo-line" d="M300 274V326"></path>
+            </g>
+
+          </svg>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="page section-inner">
+        <div class="section-index">
+          01 / Executive<br>Summary
+        </div>
+
+        <div class="content">
+          <h2>Executive Summary</h2>
+
+          <p class="lead">
+            Nexarium Verify Mail is a client-side email authentication solution that cryptographically links a defined representation of an email's content to a digital signature generated by an Ethereum-compatible wallet.
+          </p>
+
+          <p>
+            The purpose of the system is to associate verifiable data with an email so that it can later be determined whether a valid digital signature belongs to a specific email data set, and which Ethereum address the signature can be associated with.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="page section-inner">
+        <div class="section-index">
+          02 / Operation
+        </div>
+
+        <div class="content">
+          <h2>How does it work?</h2>
+
+          <p>
+            The system creates a standardized signData representation from defined email fields — sender, recipient, copies, subject, and message content. It hashes this using the SHA-256 algorithm and then has it digitally signed through the connected wallet's `personal_sign` mechanism.
+          </p>
+
+          <p>
+            The result is a structured ETH-VERIFY verification block containing, among other things, the hash value, the signature, and the wallet address. An independent verifier can recalculate the hash and verify the signature based on these data.
+          </p>
+
+          <div class="model">
+            <div class="model-title">The model is:</div>
+
+            <div class="model-flow">
+              <span>Email data set</span>
+              <span class="arrow">→</span>
+              <span>SHA-256</span>
+              <span class="arrow">→</span>
+              <span>wallet signature</span>
+              <span class="arrow">→</span>
+              <span>independent verification</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="page section-inner">
+        <div class="section-index">
+          03 / Current<br>Technology
+        </div>
+
+        <div class="content">
+          <h2>What does the current technology provide?</h2>
+
+          <p>
+            The current prototype makes it possible to cryptographically verify whether a valid wallet signature belongs to a specific email data set represented in a defined format, and which Ethereum address the signature can be traced back to.
+          </p>
+
+          <p>
+            This provides a layer of email authentication that is not based solely on a visual or textual claim, but on reproducible cryptographic data.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="identity">
+      <div class="page section-inner">
+        <div class="section-index">
+          04 / Architectural<br>Boundary
+        </div>
+
+        <div class="content">
+          <h2>What does the system not claim?</h2>
+
+          <p>
+            The current version deliberately does not automatically identify the following as being the same:
+          </p>
+
+          <ul>
+            <li>the owner of the email address and the owner of the wallet;</li>
+            <li>the wallet and the DID identity;</li>
+            <li>the digital signature and the legal identity.</li>
+          </ul>
+
+          <p>
+            The system also does not independently prove email delivery at present, nor does it record the email in an Ethereum transaction or on the blockchain.
+          </p>
+
+          <div class="boundary">
+            <p>
+              This is an important architectural boundary: Nexarium Verify Mail is currently a cryptographic email authentication layer, not a complete identity or delivery system.
+            </p>
+          </div>
+
+          <div class="identity-box">
+            <div class="identity-label">DID Identity</div>
+
+            <a
+              class="identity-link"
+              href="https://identity.nvo987.us"
+              rel="noopener noreferrer"
+            >did:web:identity.nvo987.us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="page section-inner">
+        <div class="section-index">
+          05 / Significance
+        </div>
+
+        <div class="content">
+          <h2>Business and technological significance</h2>
+
+          <p>
+            The solution is based on a verifiable model in which email content, its cryptographic digest, and the wallet signature can be linked to one another. This provides a foundation for the development of an openly verifiable email authentication infrastructure.
+          </p>
+
+          <p>
+            With further development of the current architecture, the protocol could be extended to integrate identity data, DIDs, wallet addresses, timestamps, and document identifiers into a unified, cryptographically signed payload. Another optional direction is blockchain-based notarization of the hash of the signed data.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="infrastructure">
+      <div class="page section-inner">
+        <div class="section-index">
+          06 / Technology<br>Foundation
+        </div>
+
+        <div class="content">
+          <h2>Current technology foundation</h2>
+
+          <p>
+            The reference implementation operates in a client-side JavaScript environment and is based, among other things, on the following technologies:
+          </p>
+
+          <div class="technology">
+            SHA-256 · Ethereum-compatible wallet · `personal_sign` · signature verification · DID-based identity metadata · ETH-VERIFY format · mailto-based email handoff
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="page section-inner">
+        <div class="section-index">
+          07 / Summary
+        </div>
+
+        <div class="content">
+          <h2>Summary</h2>
+
+          <p class="lead">
+            Nexarium Verify Mail provides a technological foundation that links email data to a reproducible cryptographic representation and an Ethereum wallet signature.
+          </p>
+
+          <p>
+            The most important result of the current version is an independently verifiable cryptographic email-signing model. The next level of development could be a closer, formally defined integration of identity, signature, temporal information, and optional blockchain notarization.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+  <img src="https://startup-layer.nvo987.us/images/nexarium.jpg">
+</section> 
+
+  </main>
+
+  <footer>
+
+    <div class="footer-main">
+
+      <div class="page">
+
+        <div class="footer-brand">NVO987</div>
+
+        <div class="footer-author">
+          Startup Layer · Nicholas Van-Orton
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-links">
+
+      <div class="footer-link">
+        <a
+          href="https://startup-layer.nvo987.us/"
+          rel="noopener noreferrer"
+        >
+          startup-layer.nvo987.us
+        </a>
+      </div>
+
+      <div class="footer-link">
+        <a href="mailto:nvo@nvo987.us">
+          nvo@nvo987.us
+        </a>
+      </div>
+
+      <div class="footer-link">
+        <a
+          href="https://identity.nvo987.us"
+          rel="noopener noreferrer"
+        >
+          did:web:identity.nvo987.us
+        </a>
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
